@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const toast = Toastify({
-        text: "¡Bienvenido a nuestra página!  Si estás lejos del restaurante, puedes consultar precios, verificar la disponibilidad de los platillos y ordenar tu bocadillo, almuerzo o bebida favorita llamándonos, el botón de llamada se encuentra en las tarjetas de los platillos.",
+        text: "¡Bienvenido a nuestra Menú!  Si estás lejos del restaurante, puedes consultar precios, verificar la disponibilidad de los platillos y ordenar tu bocadillo, almuerzo o bebida favorita llamándonos, el botón de llamada se encuentra en las tarjetas de los platillos.",
         duration: 15000, // Duración de 15 segundos
         close: false, // Desactivamos el cierre automático
         gravity: "top",
