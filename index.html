@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENÚ RF-SONIA</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Romanesco&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/alert.js"></script>
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="image/logov1.png" alt="logo" class="logo-imagen">
+    <h2 class="title-menu">Nuestro Menú</h2>
+  </div>
+  <div class="tab-container">
+    <!-- Navegación estilo Instagram -->
+    <div class="tab-menu">
+      <div class="tab-item active" data-tab="bocadillos">
+        <i class="icon">🍔</i>
+        <span>Bocadillos</span>
+      </div>
+      <div class="tab-item" data-tab="almuerzos">
+        <i class="icon">🍽️</i>
+        <span>Almuerzos</span>
+      </div>
+      <div class="tab-item" data-tab="bebidas">
+        <i class="icon">🥤</i>
+        <span>Bebidas</span>
+      </div>
+    </div>
+
+    <!-- Contenido de cada pestaña -->
+    <!-- INICIO SECCION BOCADILLOS -->
+    <div class="tab-content mt-5" id="bocadillos" style="display: block;">
+      <div class="flex flex-wrap justify-content-center  gap-sm-2 mt-0">
+        <!-- Carrusel 1: hamburguesas -->
+        <div class="w-full lg:w-1/2 mt-8 lg:mt-5">
+          <h2 class="text-center text-orange-500 text-2xl mb-4">Hamburguesas</h2>
+          <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(5)">
+            <div class="flex transition-transform duration-300 ease-in-out"
+              :style="{ transform: `translateX(-${current * 100}%)` }">
+              <!-- Tarjetas1  del Carrusel1 Hamburguesas -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://static.vecteezy.com/system/resources/previews/018/785/341/non_2x/home-made-beef-hamburger-with-cheese-and-vegetables-photo.jpg">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Hamburguesa Sencilla</h2>
+                    <p class="text-gray-500">Carne de res, Lechuga, Salsa y Tomate.</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas2  del Carrusel1 Hamburguesas -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kPXXE9xa/200/200/original?country=cl">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Hamburguesa con Queso</h2>
+                    <p class="text-gray-500">Carne de res,Queso cheddar, Lechuga, Tomate y Salsa</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas3  del Carrusel1 Hamburguesas -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCv4Csgz31RkmCvplJAeMFRjRv6u56xFHjpw&s">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Hamburguesa con Papas</h2>
+                    <p class="text-gray-500">Carne de Res, Queso cheddar, Lechuga, Tomate, Salsa y Papas</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas4  del Carrusel1 Hamburguesas -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://cdn.pedix.app/0ao2sQszGjCmaj8b4lwG/products/1704562601043-81516.png?size=800x800">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Hamburguesa Doble</h2>
+                    <p class="text-gray-500">Doble Carne de res, Queso cheddar, Lechuga, Tomate, Salsa</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas5  del Carrusel1 Hamburguesas -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://st4.depositphotos.com/2111141/23653/i/450/depositphotos_236537674-stock-photo-fresh-tasty-double-cheeseburger-beef.jpg">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Hamburguesa con Todo</h2>
+                    <p class="text-gray-500">Doble Carne de res, Queso cheddar, Lechuga, Tomate, Salsa y Papas </p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Más tarjetas... -->
+            </div>
+            <div class="flex justify-center space-x-2 mt-4">
+              <template x-for="(item, index) in total" :key="index">
+                <div class="w-4 h-1 rounded-full transition-all duration-300"
+                  :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+              </template>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+              <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+              <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Carrusel 2: ordenes -->
+        <div class="w-full lg:w-1/2 mt-8 lg:mt-5">
+          <h2 class="text-center text-orange-500 text-2xl mb-4">Ordenes</h2>
+          <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(4)">
+            <div class="flex transition-transform duration-300 ease-in-out"
+              :style="{ transform: `translateX(-${current * 100}%)` }">
+              <!-- Tarjetas1  del Carrusel2 Ordenes -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUiDeSEl1XWd4N20TVBLRly0HI8QDR0D3TwcIxv5C1UveHuv1_MBDEahKYMmP9TlifmGI&usqp=CAU"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Orden de Tacos</h2>
+                    <p class="text-gray-500">Carne de Res, Ensalada, Salsa y Crema</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                        class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                        <i class="fas fa-phone-alt mr-2 "></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Tarjetas2  del Carrusel2 ordenes -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlLThmQcEMcxqxFfIcVQ4e-U48fuu29oXzQ&s"
+                    alt="orden de papas">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Orden de Papas</h2>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas3  del Carrusel2 Ordenes -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://imag.bonviveur.com/emplatado-final-de-las-salchipapas.jpg"
+                    alt="orden de salchipapa">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Orden de Salchipapa</h2>
+                    <p style="color: grey;">Papas, Salchichas, Mayonesa, Salsa</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas4  del Carrusel2 Ordenes-->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://i.ytimg.com/vi/dD7YVlrlitg/maxresdefault.jpg"
+                    alt="papas con carne">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Orden de Papas con Carne</h2>
+                    <p style="color: grey;">Carne de Res, Papas, Chismol
+                      Mayonesa y Salsa </p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <!-- Más tarjetas... -->
+            </div>
+            <div class="flex justify-center space-x-2 mt-4">
+              <template x-for="(item, index) in total" :key="index">
+                <div class="w-4 h-1 rounded-full transition-all duration-300"
+                  :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+              </template>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+              <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+              <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+            </div>
+          </div>
+        </div>
+
+         <!-- Carrusel 3: Sanwiches -->
+         <div class="w-full lg:w-1/2 mt-8 lg:mt-5">
+          <h2 class="text-center text-orange-500 text-2xl mb-4">Sandwichs</h2>
+          <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(2)">
+            <div class="flex transition-transform duration-300 ease-in-out"
+              :style="{ transform: `translateX(-${current * 100}%)` }">
+
+              <!-- Tarjetas1  del Carrusel2 Ordenes -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://imag.bonviveur.com/sandwich-de-pollo.jpg"
+                    alt="sandwich de pollo">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Sanwich de Pollo</h2>
+                    <p class="text-gray-500">Pasta de pollo, Lechuga y Tomate</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                        class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                        <i class="fas fa-phone-alt mr-2 "></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Tarjetas2  del Carrusel2 ordenes -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://comedera.com/wp-content/uploads/sites/9/2021/03/sandwich-de-jamon-y-queso.jpg">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Sanwich de Jamón con Queso</h2>
+                    <p class="text-gray-500">Jamón, Queso cheddar, Lechuga y Tomate</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              
+              <!-- Más tarjetas... -->
+            </div>
+            <div class="flex justify-center space-x-2 mt-4">
+              <template x-for="(item, index) in total" :key="index">
+                <div class="w-4 h-1 rounded-full transition-all duration-300"
+                  :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+              </template>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+              <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+              <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        
+
+
+      </div>
+
+      
+
+
+
+    </div>
+    <!-- FIN SECCION BOCADILLOS -->
+
+
+
+    <!-- INICIO SECCION DE ALMUERZOS -->
+    <div class="tab-content mt-5" id="almuerzos" style="display: none;">
+      <div class="flex flex-wrap justify-content-center  gap-sm-2 mt-0">
+        <!-- Carrusel 1: Desayuno y Cenas -->
+        <div class="w-full lg:w-1/2 mt-8 lg:mt-5">
+          <h2 class="text-center text-orange-500 text-2xl mb-4">Desayuno Y Cena</h2>
+          <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(1)">
+            <div class="flex transition-transform duration-300 ease-in-out"
+              :style="{ transform: `translateX(-${current * 100}%)` }">
+              <!-- Tarjetas1  del Carrusel1 -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-9/44729779_2475246632520621_8445982135940022272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=8mzJGZK2mqUQ7kNvgEUpQnv&_nc_ht=scontent.fmga6-1.fna&oh=00_AYAuD94cRjwuy-u6bD2K7mYWi2QeZ3HxMeR8fKt5IfKbUw&oe=671A6BF2"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Gallo Pinto</h2>
+                    <p style="color: grey;">Huevos, Queso, Crema y Tortilla</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Más tarjetas... -->
+            </div>
+            <div class="flex justify-center space-x-2 mt-4">
+              <template x-for="(item, index) in total" :key="index">
+                <div class="w-4 h-1 rounded-full transition-all duration-300"
+                  :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+              </template>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+              <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+              <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Carrusel 2: Almuerzos -->
+        <div class="w-full lg:w-1/2 mt-8 lg:mt-5">
+          <h2 class="text-center text-orange-500 text-2xl mb-4">Bistec</h2>
+          <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(7)">
+            <div class="flex transition-transform duration-300 ease-in-out"
+              :style="{ transform: `translateX(-${current * 100}%)` }">
+              <!-- Tarjetas1  del Carrusel2 -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-9/44729779_2475246632520621_8445982135940022272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=8mzJGZK2mqUQ7kNvgEUpQnv&_nc_ht=scontent.fmga6-1.fna&oh=00_AYAuD94cRjwuy-u6bD2K7mYWi2QeZ3HxMeR8fKt5IfKbUw&oe=671A6BF2"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Bistec</h2>
+                    <p class="text-gray-500">Carne de res, Arroz, Frijoles, Ensalada y Tortilla</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                        class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                        <i class="fas fa-phone-alt mr-2 "></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas2  del Carrusel2 -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-9/44729779_2475246632520621_8445982135940022272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=8mzJGZK2mqUQ7kNvgEUpQnv&_nc_ht=scontent.fmga6-1.fna&oh=00_AYAuD94cRjwuy-u6bD2K7mYWi2QeZ3HxMeR8fKt5IfKbUw&oe=671A6BF2"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <p style="color: grey;">Pollo, Arroz, Frijoles, Ensalada y Tortilla</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas3  del Carrusel2 -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-9/44729779_2475246632520621_8445982135940022272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=8mzJGZK2mqUQ7kNvgEUpQnv&_nc_ht=scontent.fmga6-1.fna&oh=00_AYAuD94cRjwuy-u6bD2K7mYWi2QeZ3HxMeR8fKt5IfKbUw&oe=671A6BF2"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Carne desmenuzada</h2>
+                    <p style="color: grey;">Carne de res, Arroz, Frijoles, Ensalada y Tortilla</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas4  del Carrusel2 -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-9/44729779_2475246632520621_8445982135940022272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=8mzJGZK2mqUQ7kNvgEUpQnv&_nc_ht=scontent.fmga6-1.fna&oh=00_AYAuD94cRjwuy-u6bD2K7mYWi2QeZ3HxMeR8fKt5IfKbUw&oe=671A6BF2"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Cerdo Frito</h2>
+                    <p style="color: grey;">Cerdo, Arroz, Frijoles, Ensalada y Tortilla </p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas5  del Carrusel2 -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-9/44729779_2475246632520621_8445982135940022272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=8mzJGZK2mqUQ7kNvgEUpQnv&_nc_ht=scontent.fmga6-1.fna&oh=00_AYAuD94cRjwuy-u6bD2K7mYWi2QeZ3HxMeR8fKt5IfKbUw&oe=671A6BF2"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Salpicón</h2>
+                    <p style="color: grey;">Carne de res, Arroz, Frijoles, Ensalada y Tortilla </p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas6  del Carrusel2 -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-9/44729779_2475246632520621_8445982135940022272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=8mzJGZK2mqUQ7kNvgEUpQnv&_nc_ht=scontent.fmga6-1.fna&oh=00_AYAuD94cRjwuy-u6bD2K7mYWi2QeZ3HxMeR8fKt5IfKbUw&oe=671A6BF2"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Lengua en salsa</h2>
+                    <p style="color: grey;">Lengua de Res, Salsa, Arroz, Frijoles, Ensalada y
+                      Tortilla</p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas7  del Carrusel2 -->
+              <div class="min-w-full p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                  <img class="w-full h-70 object-cover"
+                    src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-9/44729779_2475246632520621_8445982135940022272_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=8mzJGZK2mqUQ7kNvgEUpQnv&_nc_ht=scontent.fmga6-1.fna&oh=00_AYAuD94cRjwuy-u6bD2K7mYWi2QeZ3HxMeR8fKt5IfKbUw&oe=671A6BF2"
+                    alt="Fresco de Temporada">
+                  <div class="p-4">
+                    <h2 class="font-bold text-md mb-2 text-orange-400">Chancho con Yuca</h2>
+                    <p style="color: grey;">Carne de cerdo, Yuca cocida, Ensalada </p>
+                    <div class="flex space-x-4 mt-4">
+                      <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                      <i class="fas fa-phone-alt mr-2 "></i>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Más tarjetas... -->
+            </div>
+            <div class="flex justify-center space-x-2 mt-4">
+              <template x-for="(item, index) in total" :key="index">
+                <div class="w-4 h-1 rounded-full transition-all duration-300"
+                  :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+              </template>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+              <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+            </div>
+            <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+              <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+
+      </div>
+    </div>
+               
+  </div>
+  <!-- FIN SECCION ALMUERZOS -->
+
+  <!-- INICIO SECCION DE BEBIDAS -->
+  <div class="tab-content mx-5 my-5 mt-0" id="bebidas" style="display: none;">
+    <!-- Contenedor principal de los 4 carruseles -->
+    <div class="flex flex-wrap justify-content-center  gap-sm-2 mt-0">
+
+      <!-- Carrusel 1: Batidos -->
+      <div class="w-full lg:w-1/2 mt-5 lg:mt-10">
+        <h2 class="text-center text-orange-500 text-2xl mb-4">Batidos</h2>
+        <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(6)">
+          <div class="flex transition-transform duration-300 ease-in-out"
+            :style="{ transform: `translateX(-${current * 100}%)` }">
+
+            <!-- Tarjetas1 (carrucel1) -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Batidos/batido-de-banano.jpg"
+                  alt="Batido de Banano">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Batido de Banano</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                      <i class="fas fa-phone-alt mr-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas2 (carrucel1) -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Batidos/batido-de-banano.jpg"
+                  alt="Batido de Banano">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Batido de Cocoa</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas3 (carrucel1) -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Batidos/batido-de-banano.jpg"
+                  alt="Batido de Banano">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Batido de Avena</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas4 (carrucel1) -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Batidos/batido-de-banano.jpg"
+                  alt="Batido de Banano">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-500">Batido de Vainilla</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                      <i class="fas fa-phone-alt mr-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas5 (carrucel1) -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Batidos/batido-de-banano.jpg"
+                  alt="Batido de Banano">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Batido de Frambuesa</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas6 (carrucel1) -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Batidos/batido-de-banano.jpg"
+                  alt="Batido de Banano">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Batido de Maní con pasas</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                      <i class="fas fa-phone-alt mr-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Más tarjetas... -->
+          </div>
+
+          <div class="flex justify-center space-x-2 mt-4">
+            <template x-for="(item, index) in total" :key="index">
+              <div class="w-4 h-1 rounded-full transition-all duration-300"
+                :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+            </template>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+            <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+            <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrusel 2: Licuados de Fruta -->
+      <div class="w-full lg:w-1/2 mt-5 lg:mt-10">
+        <h2 class="text-center text-orange-500 text-2xl mb-4">Licuados de Fruta</h2>
+        <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(6)">
+          <div class="flex transition-transform duration-300 ease-in-out"
+            :style="{ transform: `translateX(-${current * 100}%)` }">
+
+             <!-- Tarjetas1  del Carrusel2 licuados de fruta -->
+             <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover"
+                  src="https://www.clarin.com/2024/03/07/EiTTU4S43_360x240__1.jpg">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Sandia, Fresa y Limón</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                    <i class="fas fa-phone-alt mr-2 "></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas2  del Carrusel2 licuados de fruta -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover"
+                  src="https://mejorconsalud.as.com/wp-content/uploads/2015/12/zumo-sand%C3%ADa-para-la-inflamaci%C3%B3n.jpg"
+                  alt="Fresco de Temporada">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Sandia, Fresa y Limón</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                    <i class="fas fa-phone-alt mr-2 "></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- Tarjetas3  del Carrusel2 licuados de fruta -->
+             <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover"
+                  src="https://www.semana.com/resizer/v2/MXQH22VVQRH5LPVMYEVBKPAQIA.jpg?auth=623f54c67cf38a6fcf6c6af2f1ce788b6c7c1069197a268edb3fdc8f7ca0b494&smart=true&quality=75&width=1280&height=720"
+                  alt="Fresco de Temporada">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Piña, Naranja y Papaya</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                    <i class="fas fa-phone-alt mr-2 "></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas4  del Carrusel2 licuados de fruta -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover"
+                  src="https://i.ytimg.com/vi/EeGaUOEoU2I/maxresdefault.jpg"
+                  alt="Fresco de Temporada">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Manzana, Banano y Naranja</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                    <i class="fas fa-phone-alt mr-2 "></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas5  del Carrusel2 licuados de fruta -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover"
+                  src="https://comedera.com/wp-content/uploads/sites/9/2022/06/Batido-de-papaya-con-platano-shutterstock_496926694.jpg"
+                  alt="Fresco de Temporada">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Banano, Naranja y Papaya</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                    <i class="fas fa-phone-alt mr-2 "></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas5  del Carrusel2 licuados de fruta -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover"
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmazcHPc4SLgHs_douegrcG9Q30fNBpw4e9Q6gIF82rMd9U-yBvUTpMyt0aZT6G_qTP-y-7Cz4wYNDeX54HhclLcBW_pTNPn-kZvaLd3YVvIQST5ltfg_QHwAWxtZC0TbaFmW7kLuMMn0/s1600/IMG_2185.JPG"
+                  alt="Fresco de Temporada">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Melón, Naranja y Papaya</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full justify-center">
+                    <i class="fas fa-phone-alt mr-2 "></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Más tarjetas... -->
+          </div>
+          <div class="flex justify-center space-x-2 mt-4">
+            <template x-for="(item, index) in total" :key="index">
+              <div class="w-4 h-1 rounded-full transition-all duration-300"
+                :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+            </template>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+            <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+            <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrusel 3: Frescos Naturales -->
+      <div class="w-full lg:w-1/2 mt-5 lg:mt-10">
+        <h2 class="text-center text-orange-500 text-2xl mb-4">Frescos Naturales</h2>
+        <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(4)">
+          <div class="flex transition-transform duration-300 ease-in-out"
+            :style="{ transform: `translateX(-${current * 100}%)` }">
+
+            <!-- Tarjetas1 del Carrusel 3 frescos naturales -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Frescos/fresco-naranja.jpg"
+                  alt="Fresco Natural de Naranja">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Fresco de Cebada</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas2 del Carrusel 3 frescos naturales -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Frescos/fresco-naranja.jpg"
+                  alt="Fresco Natural de Naranja">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Fresco de Cacao</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas3 del Carrusel 3 frescos naturales -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Frescos/fresco-naranja.jpg"
+                  alt="Fresco Natural de Naranja">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Fresco de Pozol</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas4 del Carrusel 3 frescos naturales -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Frescos/fresco-naranja.jpg"
+                  alt="Fresco Natural de chia con Limón ">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Fresco de Chia con Limón</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                    class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Más tarjetas... -->
+          </div>
+          <div class="flex justify-center space-x-2 mt-4">
+            <template x-for="(item, index) in total" :key="index">
+              <div class="w-4 h-1 rounded-full transition-all duration-300"
+                :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+            </template>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+            <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+            <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrusel 4: Frescos de Temporada -->
+      <div class="w-full lg:w-1/2 mt-5 lg:mt-10">
+        <h2 class="text-center text-orange-500 text-2xl mb-4">Frescos de Temporada</h2>
+        <div class="relative overflow-hidden w-full max-w-xl mx-auto" x-data="carousel(3)">
+          <div class="flex transition-transform duration-300 ease-in-out"
+            :style="{ transform: `translateX(-${current * 100}%)` }">
+
+            <!-- Tarjetas1 del Carrusel 4 frescos de temporada -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Frescos/fresco-temporada.jpg"
+                  alt="Fresco de Temporada">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Fresco de Tamarindo</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                      <i class="fas fa-phone-alt mr-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas2 del Carrusel 4 frescos de temporada -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Frescos/fresco-temporada.jpg"
+                  alt="Fresco de Temporada">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Fresco de Nance</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                      <i class="fas fa-phone-alt mr-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjetas3 del Carrusel 4 frescos de temporada -->
+            <div class="min-w-full p-4">
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full mx-auto">
+                <img class="w-full h-70 object-cover" src="/image/bebidas/Frescos/fresco-temporada.jpg"
+                  alt="Fresco de Temporada">
+                <div class="p-4">
+                  <h2 class="font-bold text-md mb-2 text-orange-400">Fresco de Mango</h2>
+                  <div class="flex space-x-4 mt-4">
+                    <a href="tel:+50527372220"
+                      class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 justify-center w-full">
+                      <i class="fas fa-phone-alt mr-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Más tarjetas... -->
+          </div>
+          <div class="flex justify-center space-x-2 mt-4">
+            <template x-for="(item, index) in total" :key="index">
+              <div class="w-4 h-1 rounded-full transition-all duration-300"
+                :class="{ 'bg-blue-500': current === index, 'bg-gray-300': current !== index }"></div>
+            </template>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 left-0">
+            <button @click="prev" class="bg-gray-800 text-white p-2 rounded-full">&#10094;</button>
+          </div>
+          <div class="absolute top-1/2 transform -translate-y-1/2 right-0">
+            <button @click="next" class="bg-gray-800 text-white p-2 rounded-full">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+  <!-- FIN SECCION BEBIDAD -->
+  </div>
+
+
+
+
+<footer>
+
+  <P style="color: white; text-align: center;">By Wesling Garcia</P>
+
+</footer>
+  
+
+
+
+  <!-- Script que permite la funcionalidad de barra y carrucel -->
+  <script>
+    function carousel(cardCount) {
+      return {
+        current: 0,
+        total: Array.from({ length: cardCount }),
+        prev() {
+          this.current = (this.current > 0) ? this.current - 1 : this.total.length - 1;
+        },
+        next() {
+          this.current = (this.current < this.total.length - 1) ? this.current + 1 : 0;
+        }
+      }
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>

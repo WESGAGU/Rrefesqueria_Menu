@@ -1,0 +1,100 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 1 calc(25% - 40px); /* Ajusta las tarjetas para que ocupen un 25% del ancho */
+    max-width: calc(25% - 40px);
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(252, 248, 248, 0.6);
+    background-color: white;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    color: green;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-buttons a {
+    flex: 1;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.call-btn {
+    background: rgba(0, 0, 255, 0.6);
+}
+
+.whatsapp-btn {
+    background-color: rgba(0, 128, 0, 0.77);
+}
+
+.card-buttons a:hover {
+    opacity: 0.9;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    .card-container{
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-description {
+        font-size: 0.85rem;
+    }
+
+    .card-price {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Romanesco&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&family=Romanesco&family=Spicy+Rice&display=swap');
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* imagen logo */
+.logo-imagen{
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+
+}
+
+/* h2 nuestro menu */
+.title-menu{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text-orange-500{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.text-orange-400{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+/* Contenedor del menú */
+.tab-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del menú de navegación */
+.tab-menu {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #333; /* Línea inferior */
+    background-color: #000; /* Fondo negro */
+}
+
+/* Elementos de las pestañas */
+.tab-item {
+    flex-grow: 1;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #aaa; /* Color gris claro */
+}
+
+.tab-item i {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tab-item span {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Pestaña activa */
+.tab-item.active {
+    color: #fff; /* Color blanco cuando está activo */
+    border-bottom: 2px solid #fff; /* Subrayado de la pestaña activa */
+}
+
+/* Efecto hover */
+.tab-item:hover {
+    color: #ccc; /* Cambio de color al pasar el mouse */
+}
+
+/* Contenido de cada pestaña */
+.tab-content {
+    padding: 20px;
+    background-color: #1c1c1e; /* Fondo oscuro para el contenido */
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de los títulos */
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+
+/* SUBMENU  */
+.submenu{
+
+  margin: 20px 10px 0 10px;
+}
+.submenu span{
+    margin: 0 5px 0 5px;
+  
+}
+.submenu a{
+    color: #f97d0b;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Media Queries para pantallas pequeñas (tabletas y móviles) */
+@media (max-width: 768px) {
+    .tab-item span {
+        font-size: 12px; /* Tamaño de letra más pequeño en pantallas pequeñas */
+    }
+
+    .tab-item i {
+        font-size: 16px; /* Reducir tamaño del icono */
+    }
+
+    .tab-menu {
+        flex-direction: row;
+    }
+
+    .tab-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab-item span {
+        font-size: 10px; /* Tamaño de letra más pequeño para móviles */
+    }
+
+    .tab-item i {
+        font-size: 14px; /* Reducir tamaño del icono en móviles */
+    }
+
+    .tab-item {
+        padding: 8px 0; /* Reducir el relleno para caber en pantallas pequeñas */
+    }
+
+    .tab-menu {
+        flex-wrap: wrap; /* Permitir que los elementos del menú se envuelvan si es necesario */
+    }
+
+    .tab-content {
+        padding: 10px; /* Ajustar el padding para móviles */
+    }
+
+    h2 {
+        font-size: 20px; /* Ajustar el tamaño de los títulos en móviles */
+    }
+}
